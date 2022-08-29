@@ -1,5 +1,5 @@
 <?php
-
+echo "edit";
 // Path to the front controller (this file)
 define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
 
