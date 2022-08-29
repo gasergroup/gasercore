@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Invento v2 - Documentation</title>
+
+	<link href="assets/css/main.css" rel="stylesheet" />
+	<link href="assets/css/responsive.css" rel="stylesheet" />
+	<link href="assets/css/prism.css" rel="stylesheet" />
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|PT+Sans|Open+Sans:300,400,600,700,800|Roboto" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+</head>
+<body>
+	<button id="top">Back to top</button>
+
+	<div id="header">
+		<div class="container">
+			<div class="left">
+				<img src="assets/img/logo.png" />
+			</div>
+			<div class="right">
+				Version 1.0.7
+			</div>
+		</div>
+	</div>
+
+	<div id="main-top">
+		<div class="container">
+			<div class="title">
+				Documentation
+			</div>
+			<div class="intro">
+				Invento v2 is an inventory system created with Codeigniter 4, along with other technologies such as jQuery, Axios, Datatables, and more. With Invento v2, you'll be able to manage your inventory in one or any number of warehouses you have. If you also have workers and supervisors, no problem! Invento v2 includes user roles. Read the documentation below to learn more about this system.
+			</div>
+		</div>
+	</div>
+
+	<div id="main-top2">
+		<div class="contact-info">
+			<div class="left">
+				SUPPORT
+			</div>
+			<div class="right">
+				If you need help with this product, don't hesitate on sending us an email! We'll do our best to help you.
+				<br />
+				<span class="email">support@sglancer.com</span><span class="separator">|</span>Subject: <span class="subject">Invento v2 support</span>
+			</div>
+		</div>
+	</div>
+
+	<div id="main-container">
+		<nav id="sidebar">
+			<ul>
+				<li>
+					<a href="#section-features" data-scrollto="features">Features</a>
+				</li>
+				<li>
+					<a href="#section-getting-started" data-scrollto="getting-started">Getting started</a>
+				</li>
+				<li class="closed">
+					<a href="#">
+						<span>Installation</span>
+						<i class="fas fa-caret-left"></i>
+					</a>
+
+					<ul>
+						<li>
+							<a href="#section-installation-1" data-scrollto="installation-1">As main page</a>
+						</li>
+						<li>
+							<a href="#section-installation-2" data-scrollto="installation-2">As subdomain</a>
+						</li>
+						<li>
+							<a href="#section-installation-3" data-scrollto="installation-2">As subfolder</a>
+						</li>
+					</ul>
+				</li>
+				<li class="closed">
+					<a href="#">
+						<span>Updating</span>
+						<i class="fas fa-caret-left"></i>
+					</a>
+
+					<ul>
+						<li>
+							<a href="#section-updating-1" data-scrollto="updating-1">From any version to 1.0.7</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#section-system-files" data-scrollto="system-files">System files</a>
+				</li>
+				<li>
+					<a href="#section-overview" data-scrollto="overview">Overview</a>
+				</li>
+				<li>
+					<a href="#section-warehouses" data-scrollto="warehouses">Warehouses</a>
+				</li>
+				<li>
+					<a href="#section-suppliers" data-scrollto="suppliers">Suppliers</a>
+				</li>
+				<li>
+					<a href="#section-customers" data-scrollto="customers">Customers</a>
+				</li>
+				<li>
+					<a href="#section-brands" data-scrollto="brands">Brands</a>
+				</li>
+				<li>
+					<a href="#section-categories" data-scrollto="categories">Categories</a>
+				</li>
+				<li>
+					<a href="#section-items" data-scrollto="items">Items</a>
+				</li>
+				<li>
+					<a href="#section-purchases" data-scrollto="purchases">Purchases</a>
+				</li>
+				<li>
+					<a href="#section-purchase-returns" data-scrollto="purchase-returns">Purchase returns</a>
+				</li>
+				<li>
+					<a href="#section-sales" data-scrollto="sales">Sales</a>
+				</li>
+				<li>
+					<a href="#section-sale-returns" data-scrollto="sale-returns">Sale returns</a>
+				</li>
+				<li>
+					<a href="#section-quantity-adjustments" data-scrollto="quantity-adjustments">Quantity adjustments</a>
+				</li>
+				<li>
+					<a href="#section-transfers" data-scrollto="transfers">Transfers</a>
+				</li>
+				<li>
+					<a href="#section-alerts" data-scrollto="alerts">Alerts</a>
+				</li>
+				<li>
+					<a href="#section-user-roles" data-scrollto="user-roles">User roles</a>
+				</li>
+				<li>
+					<a href="#section-users" data-scrollto="users">Users</a>
+				</li>
+				<li>
+					<a href="#section-settings" data-scrollto="settings">Settings</a>
+				</li>
+				<li>
+					<a href="#section-android-app" data-scrollto="settings">Android app</a>
+				</li>
+				<li>
+					<a href="#section-translating" data-scrollto="translating">Translating</a>
+				</li>
+				<li>
+					<a href="#section-issues" data-scrollto="issues">Issues</a>
+				</li>
+				<li>
+					<a href="#section-changelog" data-scrollto="changelog">Changelog</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="container">
+			<section id="section-features">
+				<header>
+					<h3>Features</h3>
+				</header>
+
+				<p>
+					Invento v2 has the following features:
+					<ul>
+						<li>Manage your inventory in any number of warehouses</li>
+						<li>Get statistics about your incomes and expenses</li>
+						<li>Manage categories and brands for your items</li>
+						<li>3 user roles: admin, supervisor and worker</li>
+						<li>Manage your customers and suppliers</li>
+						<li>Create sales and purchases.</li>
+						<li>Create returns for sales and purchases</li>
+						<li>Be able to make quantity adjustments</li>
+						<li>Be able to make transfers between warehouses</li>
+						<li>Translation supported (included by default English and Spanish)</li>
+						<li>Access to a free app for Android with basic functionality, downloadable from the Play Store</li>
+					</ul>
+				</p>
+			</section>
+
+			<section id="section-getting-started">
+				<header>
+					<h3>Getting started</h3>
+				</header>
+
+				<p>
+					Invento v2 was created using Codeigniter 4, so in order to be able to install it, you'll need to meet these requirements:
+					<ul>
+						<li>Apache*</li>
+						<li>PHP 7.4+</li>
+						<li>intl extension enabled</li>
+						<li>mbstring extension enabled</li>
+						<li>MySQL 5.1+ with the MySQLi driver</li>
+						<li>mod_rewrite enabled</li>
+						<li>PHP extensions: php-json, php-mysqlnd, php-xml</li>
+				</p>
+				<small>* Codeigniter 4 also supports Nginx and Vagrant, but Invento v2 <strong>has not</strong> been tested on those platforms. Thus we do not assure Invento v2 will work in any of those platforms, only Apache.</small>
+			</section>
+
+			<section id="section-installation-1">
+				<header>
+					<h3>Installation (as main page)</h3>
+				</header>
+
+				<p>
+					Follow these steps if you would like to install Invento v2 as a main page (i.e. https://yourwebsite.com/)
+				</p>
+				
+				<p>
+					<ol>
+						<li>
+							In the zip file you downloaded from CodeCanyon, you'll find a file named <strong>Inventov2_v1.0.2_.zip</strong>. Extract its contents.
+						</li>
+
+						<li>
+							Upload ALL contents extracted, to your server's public folder. It is tipically named <strong>public_html</strong> or <strong>htdocs</strong>. Make sure your tree looks like this:
+
+							<p>
+								<div class="img-container">
+									<div class="inner">
+										<img src="assets/img/ss26.png" style="width: 240px;" />
+										<div class="description">Fig. 26</div>
+									</div>
+								</div>
+							</p>
+						</li>
+
+						<li>
+							Open the <strong>inventov2/.env</strong> file with your preferred text editor, and set your MySQL credentials (hostname, database, username and password).
+						</li>
+
+						<li>
+							Also, set your website's URL (app.baseURL). For example: <strong>https://yourwebsite.com/</strong>. Save the file.
+						</li>
+
+						<li>
+							Finally, visit <strong>https://mywebsite.com/install.php</strong>, and follow the instructions. Done!
+						</li>
+					</ol>
+
+					<p>
+						Remember, your login credentials will be <strong>admin</strong> (username) and <strong>123456</strong> (password). Remember to change your password.
+					</p>
+
+					<p>
+						<i>
+							PS - Once the installation is complete, please delete the <strong>install.php</strong> and <strong>install_queries.php</strong> files :)
+						</i>
+					</p>
+				</p>
+			</section>
+
+			<section id="section-installation-2">
+				<header>
+					<h3>Installation (as subdomain)</h3>
+				</header>
+
+				<p>
+					Follow these steps if you would like to install Invento v2 as a subdomain of your webpage (https://yoursystem.yourwebsite.com/).
+				</p>
+
+				<p>
+					Please replace all occurrences of "yoursystem" with your subdomain name
+				</p>
+				
+				<p>
+					<ol>
+						<li>
+							In the zip file you downloaded from CodeCanyon, you'll find a file named <strong>Inventov2_v1.0.2_.zip</strong>. Extract its contents.
+						</li>
+
+						<li>
+							Upload ALL contents extracted, to your subdomain's public folder. We will assume it is named <strong>public_html/yoursystem/</strong>. Make sure your tree looks like this:
+							<p>
+								<div class="img-container">
+									<div class="inner">
+										<img src="assets/img/ss27.png" style="width: 238px;" />
+										<div class="description">Fig. 27</div>
+									</div>
+								</div>
+							</p>
+						</li>
+
+						<li>
+							Open the <strong>inventov2/.env</strong> file with your preferred text editor, and set your MySQL credentials (hostname, database, username and password).
+						</li>
+
+						<li>
+							Also, set your website's URL (app.baseURL). For example: <strong>https://yoursystem.yourwebsite.com/</strong>. Save the file.
+						</li>
+
+						<li>
+							Finally, visit <strong>https://yoursystem.yourwebsite.com/install.php</strong>, and follow the instructions. Done!
+						</li>
+					</ol>
+
+					<p>
+						Remember, your login credentials will be <strong>admin</strong> (username) and <strong>123456</strong> (password). Remember to change your password.
+					</p>
+
+					<p>
+						<i>
+							PS - Once the installation is complete, please delete the <strong>install.php</strong> and <strong>install_queries.php</strong> files :)
+						</i>
+					</p>
+				</p>
+			</section>
+
+			<section id="section-installation-3">
+				<header>
+					<h3>Installation (subfolder)</h3>
+				</header>
+
+				<p>
+					Follow these steps if you would like to install Invento v2 as a subfolder of your webpage (https://yourwebsite.com/yoursystem).
+				</p>
+
+				<p>
+					Please replace all occurrences of "yoursystem" with your subfolder name
+				</p>
+				
+				<p>
+					<ol>
+						<li>
+							In the zip file you downloaded from CodeCanyon, you'll find a file named <strong>Inventov2_v1.0.2_.zip</strong>. Extract its contents.
+						</li>
+
+						<li>
+							Upload ALL contents extracted, to your public subfolder. We will assume it is named <strong>public_html/yoursystem/</strong>. Make sure your tree looks like this:
+							<p>
+								<div class="img-container">
+									<div class="inner">
+										<img src="assets/img/ss27.png" style="width: 238px;" />
+										<div class="description">Fig. 27</div>
+									</div>
+								</div>
+							</p>
+						</li>
+
+						<li>
+							Open the <strong>inventov2/.env</strong> file with your preferred text editor, and set your MySQL credentials (hostname, database, username and password).
+						</li>
+
+						<li>
+							Also, set your website's URL (app.baseURL). For example: <strong>https://yourwebsite.com/yoursystem</strong>. Save the file.
+						</li>
+
+						<li>
+							Open the <strong>.htaccess</strong> file with your preferred text editor, and edit the line number 18 as follows:
+							<pre><code class="language-htaccess">RewriteBase /yoursystem/</code></pre>
+						</li>
+
+						<li>
+							Finally, visit <strong>https://yourwebsite.com/yoursystem/install.php</strong>, and follow the instructions. Done!
+						</li>
+					</ol>
+
+					<p>
+						Remember, your login credentials will be <strong>admin</strong> (username) and <strong>123456</strong> (password). Remember to change your password.
+					</p>
+
+					<p>
+						<i>
+							PS - Once the installation is complete, please delete the <strong>install.php</strong> and <strong>install_queries.php</strong> files :)
+						</i>
+					</p>
+				</p>
+			</section>
+
+			<section id="section-updating-1">
+				<header>
+					<h3>Updating (from any version to 1.0.7)</h3>
+				</header>
+
+				<p>
+					A new version was released on January 7th, 2022. This version addresses bug fixes and new features, and you should follow these steps to keep your system up to date.
+				</p>
+				
+				<p>
+					<ol>
+						<li>
+							Download the update from CodeCanyon.
+						</li>
+						<li>
+							Inside the file you downloaded, you'll find a file named <strong>Inventov2_v1.0.7_.zip</strong>. Extract its contents.
+						</li>
+						<li>
+							Upload and replace all files in your current Invento v2 installation, <strong><u>except your .env and .htaccess files.</u></strong>
+						</li>
+						<li>
+							Go to your admin dashboard to apply the update. Done!
+						</li>
+					</ol>
+
+					<p>
+						<strong>Note: </strong>Logging into your admin dashboard is very important to apply the update!
+					</p>
+				</p>
+			</section>
+
+			<section id="section-system-files">
+				<header>
+					<h3>System files</h3>
+				</header>
+				
+				<p>
+					Invento v2 was built using CodeIgniter 4, which is an MVC framework. This is a list of the most relevant system files, with a brief description of each one.
+				</p>
+
+				<ul class="files">
+					<li>
+						./public_html <span>Your server's public folder</span>
+
+						<ul>
+							<li>
+								<li>
+									assets <span>Here are all assets (images, js, css...)</span>
+								</li>
+								<li>
+									inventov2 <span>Holds the core files of the entire system</span>
+
+									<ul>
+										<li>
+											app
+			
+											<ul>
+												<li>Config</li>
+											</ul>
+			
+											<ul>
+												<li>
+													Controllers
+													
+													<ul>
+														<li>Backend <span>Here are all of the backend controllers</span></li>
+														<li>Frontend <span>Here are all of the frontend controllers</span></li>
+													</ul>
+												</li>
+											</ul>
+			
+											<ul>
+												<li>Database</li>
+											</ul>
+			
+											<ul>
+												<li>Filters</li>
+											</ul>
+			
+											<ul>
+												<li>Helpers</li>
+											</ul>
+			
+											<ul>
+												<li>
+													Language <span>Here are all of the language files</span>
+												</li>
+											</ul>
+			
+											<ul>
+												<li>Libraries</li>
+											</ul>
+			
+											<ul>
+												<li>
+													Models <span>Here are all of the models</span>
+												</li>
+											</ul>
+			
+											<ul>
+												<li>ThirdParty</li>
+											</ul>
+			
+											<ul>
+												<li>
+													Views <span>Here are all of the views</span>
+												</li>
+											</ul>
+			
+										</li>
+										<li>system</li>
+										<li>tests</li>
+										<li>vendor</li>
+										<li>writable</li>
+									</ul>
+								</li>
+								<li>
+									.htaccess <span>Apache configuration file</span>
+								</li>
+								<li>
+									index.php <span>Main file of CodeIgniter</span>
+								</li>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section id="section-overview">
+				<header>
+					<h3>Overview</h3>
+				</header>
+
+				<p>
+					The main idea behind Invento v2, is to be able to manage your inventory in one or several warehouses by logging the entrance and exit of merchandise. The latter is done by submitting purchases and sales.
+				</p>
+
+				<p>
+					When you purchase items from one of your suppliers, stock will be added to a specific warehouse. When you sell items to one of your customers, stock will be deducted from a specific warehouse. This way, Invento v2 is able to keep track of all quantities, and to show you basic charts in your admin panel.
+				</p>
+			</section>
+
+			<section id="section-warehouses">
+				<header>
+					<h3>Warehouses</h3>
+				</header>
+
+				<p>
+					As soon as you install Invento v2, your first step should be creating your warehouses, since the entire system will work with them.
+				</p>
+
+				<p>
+					In the <strong>Warehouses</strong> page, you'll find a list of warehouses.
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss1.png" style="width: 700px;" />
+							<div class="description">Fig. 1</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					If you've just installed the system, this table will be empty. To create a new warehouse, click on <strong>New warehouse</strong>. Then, fill the warehouse details and click on <strong>Create warehouse</strong>. Create as many warehouses as you have.
+				</p>
+			</section>
+
+			<section id="section-suppliers">
+				<header>
+					<h3>Suppliers</h3>
+				</header>
+
+				<p>
+					Suppliers are people or companies you buy merchandise from. You get stock into any of your warehouses by buying items from suppliers. Thus, in order to submit new purchases, you must have at least one supplier.
+				</p>
+
+				<p>
+					In the <strong>Suppliers</strong> page, you'll find a list of suppliers.
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss2.png" style="width: 700px;" />
+							<div class="description">Fig. 2</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					If you've just installed the system, this table will be empty. To create a new supplier, click on <strong>New supplier</strong>. Then, fill the supplier details and click on <strong>Create supplier</strong>. Create as many suppliers as you need.
+				</p>
+			</section>
+
+			<section id="section-customers">
+				<header>
+					<h3>Customers</h3>
+				</header>
+
+				<p>
+					Customers are people or companies you sell merchandise to. You get stock out of any of your warehouses by selling items to customers. Thus, in order to submit new sales, you must have at least one customer.
+				</p>
+
+				<p>
+					In the <strong>Customers</strong> page, you'll find a list of customers.
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss3.png" style="width: 700px;" />
+							<div class="description">Fig. 3</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					If you've just installed the system, this table will be empty. To create a new customer, click on <strong>New customer</strong>. Then, fill the customer details and click on <strong>Create customer</strong>. Create as many customers as you need.
+				</p>
+			</section>
+
+			<section id="section-brands">
+				<header>
+					<h3>Brands</h3>
+				</header>
+
+				<p>
+					In order to organize your items in a better way, you can assign a brand to them. Please note this is totally optional.
+				</p>
+
+				<p>
+					If you wish to have brands, you'll find them in the <strong>Brands</strong> page.
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss4.png" style="width: 700px;" />
+							<div class="description">Fig. 4</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					If you've just installed the system, this table will be empty. To create a new brand, click on <strong>New brand</strong>. Then, fill the brand details and click on <strong>Create brand</strong>. Create as many brands as you need.
+				</p>
+
+				<p>
+					In the <strong>Items</strong> part of this documentation, we'll go through how to assign a brand to an item.
+				</p>
+			</section>
+
+			<section id="section-categories">
+				<header>
+					<h3>Categories</h3>
+				</header>
+
+				<p>
+					In order to organize your items in a better way, you can assign a category to them. Please note this is totally optional.
+				</p>
+
+				<p>
+					If you wish to have categories, you'll find them in the <strong>Categories</strong> page.
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss5.png" style="width: 700px;" />
+							<div class="description">Fig. 5</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					If you've just installed the system, this table will be empty. To create a new category, click on <strong>New category</strong>. Then, fill the category details and click on <strong>Create category</strong>. Create as many categories as you need.
+				</p>
+
+				<p>
+					In the <strong>Items</strong> part of this documentation, we'll go through how to assign a category to an item.
+				</p>
+			</section>
+
+			<section id="section-items">
+				<header>
+					<h3>Items</h3>
+				</header>
+				
+				<p>
+					Invento v2 treats items as something global across all of your warehouses. Thus, when you create new items, no warehouse is linked to them: they belong to the entire system.
+				</p>
+
+				<p>
+					Go to <strong>Items</strong>, and click on <strong>New item</strong>
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss6.png" style="width: 700px;" />
+							<div class="description">Fig. 6</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					This page might look a bit overwhelming at first, but it's very simple and useful. Here's a description of all of the fields. Those marked with an asterisk (*) are required.
+				</p>
+
+				<p>
+					<ul>
+						<li>
+							<strong>Item name*</strong> - The name of the item. For example: iPhone XS
+						</li>
+						<li>
+							<strong>Barcode type</strong> - If you wish to use barcodes, select the type of barcode this item will use. If not, leave it at none.
+						</li>
+						<li>
+							<strong>Code*</strong> - Enter the item's code. If you selected a barcode type, the code must be compliant. If you selected none, you can enter any series of alphanumeric codes.
+						</li>
+						<li>
+							<strong>Brand</strong> - If you want, you can assign a brand to this item.
+						</li>
+						<li>
+							<strong>Category</strong> - If you want, you can assign a category to this item.
+						</li>
+						<li>
+							<strong>Sale price*</strong> - The price of this item when selling it to a customer.
+						</li>
+						<li>
+							<strong>Sale tax</strong> - Tax (in percent) of this item when selling it to a customer. It is added to the sale price.
+						</li>
+						<li>
+							<strong>Description</strong> - Any description for this item
+						</li>
+						<li>
+							<strong>Dimensions</strong> - If you want, you can save the dimensions of this item (weight, width, height and depth)
+						</li>
+						<li>
+							<strong>Minimum quantity alert</strong> - If you set this value, you will receive an alert if the item reaches this number in <strong>any</strong> of your warehouses.
+						</li>
+						<li>
+							<strong>Maximum quantity alert</strong> - If you set this value, you will receive an alert if the item reaches this number in <strong>any</strong> of your warehouses.
+						</li>
+						<li>
+							<strong>Notes</strong> - Any notes for this item
+						</li>
+					</ul>
+				</p>
+
+				<p>
+					After creating this item, you will be redirected to the item page, where you'll be able to assign suppliers for it. Before creating any purchases, you <strong>must</strong> assign at least one supplier for your item.
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss7.png" style="width: 700px;" />
+							<div class="description">Fig. 7</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					Click on <strong>Add supplier</strong>
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss8.png" style="width: 700px;" />
+							<div class="description">Fig. 8</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					<ul>
+						<li>
+							<strong>Supplier*</strong> - Which supplier you would like to assign to your item
+						</li>
+						<li>
+							<strong>Price*</strong> - The price that your supplier has for this item
+						</li>
+						<li>
+							<strong>Tax</strong> - The tax that your supplier has for this item (will be added to the price)
+						</li>
+						<li>
+							<strong>Part number</strong> - The part number that your supplier uses for this item
+						</li>
+					</ul>
+				</p>
+
+				<p>
+					Once you save your suppliers, you'll be able to see and manage them from the item page.
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss9.png" style="width: 700px;" />
+							<div class="description">Fig. 9</div>
+						</div>
+					</div>
+				</p>
+
+			</section>
+
+			<section id="section-purchases">
+				<header>
+					<h3>Purchases</h3>
+				</header>
+
+				<p>
+					Whenever you purchase merchandise from one of your suppliers, you have to submit a new purchase. When you do so, items purchased will be added to your stock and accounting. To create a new purchase, go to the <strong>Purchases</strong> page, and click on <strong>New purchase</strong>
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss10.png" style="width: 700px;" />
+							<div class="description">Fig. 10</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					Before you start to add items, you <strong>must</strong> generate a new reference (or assign your own), select a warehouse, and select a supplier. Bear in mind that you'll able to add only items that have a supplier assigned, and quantities purchased will be added to the stock in the particular warehouse you select.
+				</p>
+
+				<p>
+					After filling those 3 details, the rest of the inputs will be enabled.
+				</p>
+
+				<p>
+					Start adding items by searching them by name or code. Enter the amounts to purchase, and watch the order amounts change automatically.
+				</p>
+
+				<p>
+					Set your shipping cost, discount (in amount) or tax (in percent) for this particular order. Also, set notes if needed.
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss11.png" style="width: 700px;" />
+							<div class="description">Fig. 11</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					Once you're happy with all of the details, click on <strong>Create purchase</strong>. Purchases cannot be deleted, so make sure everything is correct before submitting it.
+				</p>
+
+				<p>
+					Once the purchase is submitted, quantities purchased will be added to the inventory of the particular warehouse you selected.
+				</p>
+
+			</section>
+
+			<section id="section-purchase-returns">
+				<header>
+					<h3>Purchase returns</h3>
+				</header>
+
+				<p>
+					There are times when you would like to return merchandise you purchased from a supplier, due to several reasons. When this is the case, you have to submit a new purchase return. When you do so, items returned will be subtracted from your stock (for the specific warehouse where the original purchase took place). To create a new return, go to the <strong>Purchase returns</strong> page, and click on <strong>New return</strong>
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss12.png" style="width: 700px;" />
+							<div class="description">Fig. 12</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					First, you <strong>must</strong> enter the original purchase reference, and press <strong>enter</strong>. The purchase details will be loaded, please confirm everything matches the purchase you were looking for.
+				</p>
+
+				<p>
+					Set the quantity to return of the items that will be returned to the supplier.
+				</p>
+
+				<p>
+					Set shipping cost, discount (in amount) and tax (in percent) for this return. 
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss13.png" style="width: 700px;" />
+							<div class="description">Fig. 13</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					Once you're happy with all of the details, click on <strong>Create return</strong>. Returns cannot be deleted, so make sure everything is correct before submitting it.
+				</p>
+
+				<p>
+					Once the return is submitted, quantities returned will be subtracted from the inventory of the particular warehouse the original purchase took place.
+				</p>
+			</section>
+
+			<section id="section-sales">
+				<header>
+					<h3>Sales</h3>
+				</header>
+
+				<p>
+					Whenever you sell merchandise to one of your customers, you have to submit a new sale. When you do so, items sold will be subtracted from your stock and accounting. To create a new sale, go to the <strong>Sales</strong> page, and click on <strong>New sale</strong>
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss14.png" style="width: 700px;" />
+							<div class="description">Fig. 14</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					Before you start to add items, you <strong>must</strong> generate a new reference (or assign your own), select a warehouse, and select a customer. Bear in mind that quantities sold will be subtracted from the stock of the particular warehouse you select, and that you cannot sell more items than what you have in that warehouse.
+				</p>
+
+				<p>
+					After filling those 3 details, the rest of the inputs will be enabled.
+				</p>
+
+				<p>
+					Start adding items by searching them by name or code. Enter the amounts to sell, and watch the order amounts change automatically.
+				</p>
+
+				<p>
+					Set your shipping cost, discount (in amount) or tax (in percent) for this particular order. Also, set notes if needed.
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss15.png" style="width: 700px;" />
+							<div class="description">Fig. 15</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					Once you're happy with all of the details, click on <strong>Create sale</strong>. Sales cannot be deleted, so make sure everything is correct before submitting it.
+				</p>
+
+				<p>
+					Once the sale is submitted, quantities sold will be subtracted from the inventory of the particular warehouse you selected.
+				</p>
+
+			</section>
+
+			<section id="section-sale-returns">
+				<header>
+					<h3>Sale returns</h3>
+				</header>
+
+				<p>
+					There are times when one of your customers would like to return merchandise you sold to them, due to several reasons. When this is the case, you have to submit a new sale return. When you do so, items returned will be added back to your inventory (for the specific warehouse where the original sale took place). To create a new return, go to the <strong>Sale returns</strong> page, and click on <strong>New return</strong>
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss16.png" style="width: 700px;" />
+							<div class="description">Fig. 16</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					First, you <strong>must</strong> enter the original sale reference, and press <strong>enter</strong>. The sale details will be loaded, please confirm everything matches the sale you were looking for.
+				</p>
+
+				<p>
+					Set the quantity to return of the items that the customer will return to you.
+				</p>
+
+				<p>
+					Set shipping cost, discount (in amount) and tax (in percent) for this return. 
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss17.png" style="width: 700px;" />
+							<div class="description">Fig. 17</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					Once you're happy with all of the details, click on <strong>Create return</strong>. Returns cannot be deleted, so make sure everything is correct before submitting it.
+				</p>
+
+				<p>
+					Once the return is submitted, quantities returned will be added back to the inventory of the particular warehouse the original sale took place.
+				</p>
+			</section>
+
+			<section id="section-quantity-adjustments">
+				<header>
+					<h3>Quantity adjustments</h3>
+				</header>
+
+				<p>
+					There are times when you would like to make quantity adjustments in any of your warehouses, without having to submit a sale or purchase (and thus, without affecting your accounting). To create a new quantity adjustment, go to the <strong>Quantity adjustments</strong> page, and click on <strong>New adjustment</strong>
+				</p>
+
+				<p>
+				<div class="img-container">
+					<div class="inner">
+						<img src="assets/img/ss18.png" style="width: 700px;" />
+						<div class="description">Fig. 18</div>
+					</div>
+				</div>
+				</p>
+
+				<p>
+					First, select the warehouse where you would like to make the quantity adjustment. Then, start adding the items you would like to adjust.
+				</p>
+
+				<p>
+					For each and every item you added, select the adjustment type (add or subtract), and set the amount of items to add/subtract.
+				</p>
+
+				<p>
+				<div class="img-container">
+					<div class="inner">
+						<img src="assets/img/ss19.png" style="width: 700px;" />
+						<div class="description">Fig. 19</div>
+					</div>
+				</div>
+				</p>
+
+				<p>
+					Once you're happy with all of the adjustment details, click on <strong>Create adjustment</strong>. Adjustments cannot be deleted, so make sure everything is correct before submitting it.
+				</p>
+
+				<p>
+					Once the adjustment is submitted, quantities will be updated in the warehouse you selected.
+				</p>
+			</section>
+
+			<section id="section-transfers">
+				<header>
+					<h3>Transfers</h3>
+				</header>
+
+				<p>
+					There are times when you would like to transfer stock from one warehouse to another, without having to submit sales, purchases or quantity adjustments. To create a new transfer, go to the <strong>Transfers</strong> page, and click on <strong>New transfer</strong>
+				</p>
+
+				<p>
+				<div class="img-container">
+					<div class="inner">
+						<img src="assets/img/ss31.png" style="width: 700px;" />
+						<div class="description">Fig. 31</div>
+					</div>
+				</div>
+				</p>
+
+				<p>
+					First, select which warehouses you would like to transfer stock from and to. Then, start adding the items you would like to transfer.
+				</p>
+
+				<p>
+					For each and every item you added, set the quantity to transfer. The last two columns in the table will show the stock change to occur in both warehouses.
+				</p>
+
+				<p>
+				<div class="img-container">
+					<div class="inner">
+						<img src="assets/img/ss32.png" style="width: 700px;" />
+						<div class="description">Fig. 32</div>
+					</div>
+				</div>
+				</p>
+
+				<p>
+					Once you're happy with all of the transfer details, click on <strong>Create transfer</strong>. Transfers cannot be deleted, so make sure everything is correct before submitting.
+				</p>
+
+				<p>
+					Once the transfer is submitted, quantities will be updated in the warehouses you selected.
+				</p>
+			</section>
+
+			<section id="section-alerts">
+				<header>
+					<h3>Alerts</h3>
+				</header>
+
+				<p>
+					When you created a new item, you had the option to set a <strong>minimum quantity alert</strong> and <strong>maximum quantity alert</strong>. Whenever you create a sale, purchase, return or quantity adjustment, the system will detect if the quantity of the affected items are outside of the range you set. If it is, a new alert will be generated.
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss20.png" style="width: 700px;" />
+							<div class="description">Fig. 20</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					You can either click the bell in the header, or click the <strong>Alerts</strong> option in the sidebar.
+				</p>
+
+				<p>
+					In the alerts page, you will find a table with all of the alerts generated, along with: the item name, warehouse name, the alert type (minimum or maximum), the setpoint you saved, the current quantity, and the date when the alert triggered.
+				</p>
+
+				<p>
+					The only way to remove alerts is by either editing the setpoints of the item, or by adjusting the quantity (with a sale, purchase, return, or quantity adjustment)
+				</p>
+			</section>
+
+			<section id="section-user-roles">
+				<header>
+					<h3>User roles</h3>
+				</header>
+
+				<p>
+					Invento v2 comes with 3 user roles: admin, supervisor and worker.
+				</p>
+
+				<p>
+					Admins and supervisors will see the exact same initial dashboard when they log in. However, information will be different: supervisors will only see information about the warehouses you've given them access to.
+				</p>
+
+				<p>
+					On the other hand, workers will see the following initial dashboard, where they will have access to several quick actions:
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss21.png" style="width: 700px;" />
+							<div class="description">Fig. 21</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					In general, here's how roles are restricted:
+
+					<ul>
+						<li><strong>Admins</strong> - Have access to the entire site</li>
+						<li><strong>Supervisors</strong> - Do not have access to users, warehouses, system settings, and for the rest of the sections they only have access to warehouses you've given them access to.</li>
+						<li><strong>Worker</strong> - Same as a supervisor, but with limited functions</li>
+					</ul>
+				</p>
+
+				<p>
+					Below is a table showing the privileges of each user role:
+				</p>
+
+				<table>
+					<thead>
+						<tr>
+							<th width="22%">Privilege</th>
+							<th width="16%">Worker</th>
+							<th width="16%">Supervisor</th>
+							<th width="16%">Admin</th>
+							<th width="30%">More info</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="5"><strong>Items</strong></td>
+						</tr>
+						<tr>
+							<td>See all</td>
+							<td>Yes, including all quantities</td>
+							<td>Yes, including all quantities</td>
+							<td>Yes, including all quantities</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Create</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td>Items are system-level (not warehouse), so only admin can manage them.</td>
+						</tr>
+						<tr>
+							<td>Edit</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Add suppliers</td>
+							<td></td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Edit suppliers</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Delete suppliers</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="5"><strong>Purchases (and purchase returns)</strong></td>
+						</tr>
+						<tr>
+							<td>See</td>
+							<td>Only warehouses it has access to</td>
+							<td>Only warehouses it has access to</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Create</td>
+							<td>Only warehouses it has access to</td>
+							<td>Only warehouses it has access to</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="5"><strong>Sales (and sale returns)</strong></td>
+						</tr>
+						<tr>
+							<td>See</td>
+							<td>Only warehouses it has access to</td>
+							<td>Only warehouses it has access to</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Create</td>
+							<td>Only warehouses it has access to</td>
+							<td>Only warehouses it has access to</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="5"><strong>Suppliers</strong></td>
+						</tr>
+						<tr>
+							<td>See all</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Create</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Update</td>
+							<td></td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Delete</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td>Customers are system-level (not warehouse), so only admins can delete them</td>
+						</tr>
+						<tr>
+							<td colspan="5"><strong>Categories</strong></td>
+						</tr>
+						<tr>
+							<td>See all</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Create</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Update</td>
+							<td></td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Delete</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td>Categories are system-level (not warehouse), so only admins can delete them</td>
+						</tr>
+						<tr>
+							<td colspan="5"><strong>Brands</strong></td>
+						</tr>
+						<tr>
+							<td>See all</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Create</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Update</td>
+							<td></td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Delete</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td>Brands are system-level (not warehouse), so only admins can delete them</td>
+						</tr>
+						<tr>
+							<td colspan="5"><strong>Warehouses</strong></td>
+						</tr>
+						<tr>
+							<td>See</td>
+							<td></td>
+							<td>Only those it has access to</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>See responsible users</td>
+							<td></td>
+							<td>Yes</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Modify responsible users</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Create</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Update</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Delete</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="5"><strong>Others</strong></td>
+						</tr>
+						<tr>
+							<td>Quantity adjustments</td>
+							<td></td>
+							<td>Only warehouses it has access to</td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Site settings (see, modify)</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Users (manage)</td>
+							<td></td>
+							<td></td>
+							<td>Yes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Dashboard</td>
+							<td>Quick actions only</td>
+							<td>Stats about the warehouses it has access to</td>
+							<td>Stats about the entire site</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="section-users">
+				<header>
+					<h3>Users</h3>
+				</header>
+
+				<p>
+					Users can only be managed by administrators. This includes username/email/password changes.
+				</p>
+
+				<p>
+					To create a new user, go to the <strong>Users</strong> page and click on <strong>New user</strong>
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss22.png" style="width: 700px;" />
+							<div class="description">Fig. 22</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					Enter the information about the new account, and select the desired role. Please consider the following:
+
+					<ul>
+						<li>Roles are permanent, once you create the account, you won't be able to modify the role</li>
+						<li>If you create an administrator account, it will have the exact same privileges as your account, including being able to remove your account.</li>
+					</ul>
+				</p>
+
+				<p>
+					When you entered all details, click on <strong>Create user</strong>
+				</p>
+
+				<p>
+					You'll be redirected to the details of the user created. If you created a worker or supervisor, you will need to give access to the warehouses you would like. To do so, select a warehouse from the dropdown. Access will be given immediately.
+				</p>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss23.png" style="width: 700px;" />
+							<div class="description">Fig. 23</div>
+						</div>
+					</div>
+				</p>
+			</section>
+
+			<section id="section-settings">
+				<header>
+					<h3>Settings</h3>
+				</header>
+
+				<p>
+					To manage your site, go to the <strong>Settings</strong> page
+				</p>
+			
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss24.png" style="width: 700px;" />
+							<div class="description">Fig. 24</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					<strong>Upload new logo</strong><br />
+					If you would like to change the logo of your website, select a PNG file. As soon as you select one, it will be uploaded automatically. The PNG image must have a dimensions of 510x135 pixels.
+				</p>
+
+				<p>
+					<strong>Site title</strong><br />
+					The title of your website
+				</p>
+
+				<p>
+					<strong>JWT secret key</strong><br />
+					Sessions are created using JWT, which are protected with this secret key. For security reasons, it must be a random string of at least 20 characters. Bear in mind that if you change this setting, you will be prompted to log into the system again.
+				</p>
+
+				<p>
+					<strong>JWT expiration time</strong><br />
+					JWT created by the system will have an expiration time. Once the expiration time reaches, the session will be closed, and the user will be promped to log into the system again. Set the expiration time here in seconds.
+				</p>
+
+				<p>
+					<strong>Default locale</strong><br />
+					Language by default
+				</p>
+
+				<p>
+					<strong>Currency</strong><br />
+					Currency by default
+				</p>
+
+				<p>
+					<strong>Style</strong><br />
+					The style/method to use when generating new references automatically for sales/purchases
+				</p>
+
+				<p>
+					<strong>Length (for increasing style)</strong><br />
+					When generating references incrementally, if the length of the reference generated is less than this value, zeroes will be prepended to match this exact length.
+				</p>
+
+				<p>
+					<strong>Allowed characters (for random style)</strong><br />
+					Which characters to use when generating random references
+				</p>
+
+				<p>
+					<strong>Length (for random style)</strong><br />
+					When generating references randomly, the length those references must have.
+				</p>
+
+				<p>
+					<strong>References variations</strong><br />
+					When creating sales and purchases, reference can be appended/prepended by characters of your choice
+				</p>
+
+				<p>
+					<strong>Return references variations</strong><br />
+					When creating sales and purchases returns, their reference will be the same as the original order, with extra characters appended/prepended to it
+				</p>
+			</section>
+
+			<section id="section-android-app">
+				<header>
+					<h3>Android App</h3>
+				</header>
+
+				<p>
+					Your purchase of Invento v2 includes free access to an Android App that is available in the Play Store. This app provides you with basic functionality for now: the ability of looking items up by scanning their barcode, or by manually entering it.
+				</p>
+
+				<p>
+					To install this app, follow these steps:
+				</p>
+
+				<ol>
+					<li>
+						Go to <a href="https://play.google.com/store/apps/details?id=com.ydev.inventov2">https://play.google.com/store/apps/details?id=com.ydev.inventov2</a> from your phone, or search for <strong>Invento v2</strong> in the Play Store
+					</li>
+					<li>Download the app, and open it</li>
+
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss28.png" style="width: 200px;" />
+							<div class="description">Fig. 28</div>
+						</div>
+					</div>
+
+					<li>
+						In the enrolling screen (fig. 28), enter the URL of your Invento v2 installation. For example: https://myinstallation.com/
+					</li>
+
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss29.png" style="width: 200px;" />
+							<div class="description">Fig. 29</div>
+						</div>
+					</div>
+
+					<li>
+						Now, in the login screen (fig. 29), enter your user's credentials, from your Invento v2 installation.
+					</li>
+
+					<li>
+						Done!
+					</li>
+				</ol>
+
+				<p>
+					Now, you'll be able to look items up, either by scanning their barcode or manually entering it.
+				</p>
+			
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss30.png" style="width: 200px;" />
+							<div class="description">Fig. 30</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					If you like included app and you'd like us to add more features to it, please let us know! We're very interested in knowing what kind of features you'd like to see.
+				</p>
+			</section>
+
+			<section id="section-issues">
+				<header>
+					<h3>Issues</h3>
+				</header>
+
+				<p>
+					<div class="img-container">
+						<div class="inner">
+							<img src="assets/img/ss25.png" style="width: 700px;" />
+							<div class="description">Fig. 25</div>
+						</div>
+					</div>
+				</p>
+
+				<p>
+					If at any given time, your website shows something like the image above, please follow these steps:
+				</p>
+
+				<p>
+					<ol>
+						<li>
+							Open the <strong>/inventov2/.env</strong> file with your preferred text editor
+						</li>
+						<li>
+							Edit the line 27, and replace it with this:
+
+							<pre><code class="language-env">CI_ENVIRONMENT = development</code></pre>
+						</li>
+						<li>
+							Reload the page that was giving you the error. Take a screenshot, and sent it to us (<strong>support@sglancer.com</strong>), along with your server's credentials.
+						</li>
+					</ol>
+				</p>
+			</section>
+
+			<section id="section-translating">
+				<header>
+					<h3>Translating</h3>
+				</header>
+
+				<p>
+					Invento v2 does support translation, and comes with 2 languages already included: English and Spanish.
+				</p>
+
+				<p>
+					Language files are located in the <strong>/inventov2/app/Language</strong> path.
+				</p>
+
+				<p>
+					To create a new language file, duplicate any existing language. For example, if you would like to translate to Chinese (CN), duplicate the <strong>/inventov2/app/Language/en</strong> directory (along with the Errors.php, Main.php and Validation.php files). Now, open each one of those files with your preferred text editor, and translate line by line.
+				</p>
+
+				<p>
+					Done!
+				</p>
+			</section>
+
+			<section id="section-changelog">
+				<header>
+					<h3>Changelog</h3>
+				</header>
+
+				<p>
+					<strong>1.0.7</strong> - 07/Jan/2022
+				</p>
+				<ul>
+					<li>Added transfers between warehouses</li>
+					<li>Fixed issue that prevented users from adding items to a purchase/sale/adjustment</li>
+					<li>Fixed issue where datetime fields had a default value</li>
+				</ul>
+
+				<p>
+					<strong>1.0.6</strong> - 21/Nov/2021
+				</p>
+				<ul>
+					<li>Fixed issue with incorrect revenue calculation</li>
+					<li>Fixed issue where some stats were available for supervisors without access</li>
+					<li>Fixed issue where individual tax was not included in total calculations</li>
+					<li>Added missing currency symbol to some sections</li>
+				</ul>
+
+				<p>
+					<strong>1.0.5</strong> - 11/Nov/2021
+				</p>
+				<ul>
+					<li>Added export to CSV functionality to: items, purchases (and returns), sales (and returns), suppliers, customers, categories, brands, warehouses and users</li>
+					<li>Fixed missing translations</li>
+				</ul>
+
+				<p>
+					<strong>1.0.4</strong> - 08/Sep/2021
+				</p>
+				<ul>
+					<li>Fixed responsive design issues on mobile</li>
+					<li>Fixed bug that would make locales not to work</li>
+				</ul>
+
+				<p>
+					<strong>1.0.2</strong> - 04/Sep/2021
+				</p>
+				<ul>
+					<li>Refactored installation method</li>
+				</ul>
+
+				<p>
+					<strong>1.0.1</strong> - 03/Sep/2021
+				</p>
+				<ul>
+					<li>Refactored entire installation method</li>
+				</ul>
+
+				<p>
+					<strong>1.0.0</strong> - 01/Sep/2021
+				</p>
+				<ul>
+					<li>First release</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+	<div id="footer">
+		Designed by SGLancer.
+	</div>
+
+	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="assets/js/prism.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

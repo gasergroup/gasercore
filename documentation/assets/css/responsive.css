@@ -1,0 +1,181 @@
+@media (max-width: 1300px) {
+	#header {
+		height: 60px;
+	}
+	#header .container {
+		width: 100%;
+		height: 60px;
+	}
+
+
+	#main-top {
+		margin-top: 60px;
+	}
+	#main-top .container {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 20px;
+	}
+	#main-top .container .title {
+		font-size: 26px;
+	}
+	#main-top .container .intro {
+		font-size: 16px;
+	}
+	#main-top .container .contact-info .left {
+		width: 25%;
+		font-size: 17px;
+	}
+	#main-top .container .contact-info .right {
+		width: 75%;
+		font-size: 14px;
+	}
+
+	#main-container {
+		width: 100%;
+	}
+	#main-container nav#sidebar {
+		width: 22%;
+		box-sizing: border-box;
+	}
+	#main-container nav#sidebar > ul > li > a > span {
+		width: 85%;
+	}
+	#main-container nav#sidebar > ul > li > a > i {
+		width: 6%;
+	}
+	#main-container nav#sidebar > ul > li > a {
+		font-size: 15px;
+	}
+	#main-container nav#sidebar > ul > li > ul > li > a {
+		font-size: 13px;
+	}
+	#main-container #container {
+		width: 72%;
+		float: right;
+		margin-left: 0px;
+		padding-right: 20px;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	h4 {
+		font-size: 14px;
+	}
+	h5 {
+		font-size: 12px;
+	}
+	h6 {
+		font-size: 10px;
+	}
+
+	code {
+		font-size: 17px;
+	}
+}
+
+
+
+@media (max-width: 900px) {
+	#header {
+		position: fixed;
+		z-index: 9999;
+		height: 50px;
+	}
+	#header .container {
+		height: 50px;
+	}
+	#header .container .left img {
+		height: 36px;
+	}
+
+	#main-top {
+		margin-top: 50px;
+	}
+	#main-top .container .title {
+		padding-top: 30px;
+		font-size: 22px;
+	}
+	#main-top .container .intro {
+		font-size: 15px;
+		padding-bottom: 30px;
+	}
+
+	#main-container nav#sidebar {
+		position: absolute;
+		top: 0;
+		left: -301px;
+		width: 300px;
+		z-index: 999999;
+	}
+	#main-container nav#sidebar > ul > li > a > span {
+		width: 230px;
+	}
+	#main-container nav#sidebar > ul > li > a > i {
+		width: 12px;
+	}
+
+	#main-container #container {
+		width: 100%;
+		float: none;
+		padding:0 20px;
+		box-sizing: border-box;
+	}
+
+	html, body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+
+	/* To animate when showing sidebar */
+	#main-container nav#sidebar {
+		transition: left 0.3s ease-in-out;
+	}
+	#header {
+		transition: left 0.3s ease-in-out;
+	}
+	#main-top {
+		transition: margin 0.3s ease-in-out;
+	}
+	#main-container {
+		transition: margin 0.3s ease-in-out;
+	}
+
+
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 18px;
+	}
+	h3 {
+		font-size: 14px;
+	}
+	h4 {
+		font-size: 12px;
+	}
+	h5 {
+		font-size: 10px;
+	}
+	h6 {
+		font-size: 8px;
+	}
+
+	code {
+		font-size: 16px;
+	}
+
+	#main-container #container section .list-left-col,
+	#main-container #container section .list-right-col {
+		float: none;
+		width: 100%;
+	}
+}
